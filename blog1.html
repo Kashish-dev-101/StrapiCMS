@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blog</title>
+    <link rel="stylesheet" href="./blog1.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container">
+        <a class="brand" href="index.html">MyBlog</a>
+        <nav class="navLinks">
+          <a href="index.html">Home</a>
+          <a href="#">About</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <article class="post">
+        <figure class="banner">
+          <img id="bannerImg" src="" alt="Post banner" />
+        </figure>
+
+        <h1 id="postTitle" class="title">Loading title...</h1>
+
+        <p class="meta">
+          <time id="createdAt">Loading date...</time>
+          <span class="dot" aria-hidden="true"></span>
+          <span id="readTime">Reading time</span>
+        </p>
+
+        <section id="postContent" class="content">
+          <!-- You will inject rich text or HTML from Strapi here -->
+          <p>Loading content...</p>
+        </section>
+
+        <hr class="sectionDivider" />
+
+        <section class="authorSection">
+          <img
+            id="authorAvatar"
+            class="authorAvatar"
+            src=""
+            alt="Author avatar"
+          />
+          <div class="authorInfo">
+            <h3 id="authorName">Author name</h3>
+            <p id="authorBio" class="authorBio">
+              Short author bio will appear here.
+            </p>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <small>© <span id="year"></span> MyBlog</small>
+      </div>
+    </footer>
+
+    <script>
+      // optional tiny helper to set the footer year
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script src="./blog1.js"></script>
+  </body>
+</html>
